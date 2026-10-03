@@ -3,4 +3,4 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGroq(model="qwen/qwen3.8-27b")
+llm = ChatGroq(model="qwen/qwen3.8-27b", max_tokens=900)

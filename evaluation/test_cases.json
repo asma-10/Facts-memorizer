@@ -1,0 +1,72 @@
+[
+  {
+    "id": "relevant_diet",
+    "category": "relevant_memory",
+    "memories": ["User is vegetarian", "User has a dog named Rex", "User is learning guitar"],
+    "question": "Can you suggest a dinner idea for tonight?",
+    "must_not_mention": ["chicken", "beef", "lamb", "tuna", "steak"]
+  },
+  {
+    "id": "relevant_pet",
+    "category": "relevant_memory",
+    "memories": ["User has a dog named Rex", "User works night shifts"],
+    "question": "Any tips for keeping my pet entertained while I'm away?",
+    "must_mention_any": ["Rex", "dog"]
+  },
+  {
+    "id": "relevant_hobby",
+    "category": "relevant_memory",
+    "memories": ["User is learning guitar", "User is allergic to peanuts"],
+    "question": "What should I practice this week to improve?",
+    "must_mention_any": ["guitar", "chord", "strum"]
+  },
+  {
+    "id": "irrelevant_capital",
+    "category": "irrelevant_memory",
+    "memories": ["User has a dog named Rex", "User is learning guitar"],
+    "question": "What is the capital of Australia?",
+    "must_not_mention": ["Rex", "guitar", "dog"]
+  },
+  {
+    "id": "irrelevant_math",
+    "category": "irrelevant_memory",
+    "memories": ["User is vegetarian", "User lives in Algeria"],
+    "question": "What is 15% of 240?",
+    "must_not_mention": ["vegetarian", "Algeria"]
+  },
+  {
+    "id": "sensitive_not_creepy",
+    "category": "irrelevant_memory",
+    "memories": ["User is anxious about an upcoming surgery"],
+    "question": "Recommend me a good science fiction book.",
+    "must_not_mention": ["surgery"]
+  },
+  {
+    "id": "no_memory_food",
+    "category": "no_memory",
+    "memories": [],
+    "question": "What is my favorite food?"
+  },
+  {
+    "id": "partial_memory_age",
+    "category": "no_memory",
+    "memories": ["User lives in Algeria"],
+    "question": "How old am I?"
+  },
+  {
+    "id": "no_memory_family",
+    "category": "no_memory",
+    "memories": ["User is learning guitar"],
+    "question": "Do you remember the name of my sister?"
+  },
+  {
+    "id": "conflict_job",
+    "category": "conflicting",
+    "memories": [
+      "User works as a teacher (said in January)",
+      "User quit teaching and now works as a nurse (said in March)"
+    ],
+    "question": "Remind me, what do I do for work?",
+    "must_mention_any": ["nurse"]
+  }
+]

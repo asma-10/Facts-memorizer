@@ -2,3 +2,4 @@
 .venv
 memories.json
 __pycache__
+venv
